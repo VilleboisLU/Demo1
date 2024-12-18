@@ -1,0 +1,128 @@
+html {
+    background-color: black;
+    font-family: Calibri;
+}
+
+a {
+    text-decoration: none;
+    color: #CA3143;
+}
+
+html[data-theme="dark"] .card {
+    background: #222222;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    transform: scale(0.8);
+}
+
+
+
+form {
+    min-width: 500px;
+    max-width: 600px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 100px;
+}
+
+.notice {
+    padding: 10px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.notice.error {
+    border: 2px solid #762c2c;
+    background: #f3d3d3;
+    color: #762c2c;
+}
+
+.notice.success {
+    border: 2px solid #2c742b;
+    background: #e1fee3;
+    color: #2c742b;
+}
+
+.card {
+    background: #222222;
+    color: #CA3143;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__header {
+    color: #CA3143;
+}
+
+.login__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-content: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box; /* Включает padding и border в ширину */
+}
+
+.login__submit {
+    background-color: #CA3143;
+    color: white;
+    border-color: transparent;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+input {
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+}
+
+label {
+    width: 100%;
+}
+
+.login__p {
+    color: white;
+}
+
+.city {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444; 
+    border-radius: 5px;
+    font-size: 16px; 
+    margin-bottom: 15px; 
+    transition: border-color 0.3s ease;
+}
+.city:focus {
+    border-color: #ff3b30; 
+    outline: none; 
+}
